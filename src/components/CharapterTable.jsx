@@ -77,19 +77,19 @@ const HeroTable = () => {
           mt: 3,
           boxShadow: "none",
           maxHeight: 700,
-          maxWidth: 500,
+          maxWidth: 555,
         }}
         component={Paper}
       >
         <Table
-          sx={{ overflowY: "scroll", maxWidth: 500 }}
+          sx={{ overflowY: "scroll", maxWidth: 555 }}
           aria-label="customized table"
         >
           <TableHead sx={{ position: "sticky", top: 0 }}>
             <TableRow>
-              <StyledTableCell style={{ width: 6 }}>ID</StyledTableCell>
+              <StyledTableCell style={{ width: '24px' }} align="center">ID</StyledTableCell>
               <StyledTableCell align="left">Name</StyledTableCell>
-              <StyledTableCell align="center">Status</StyledTableCell>
+              <StyledTableCell style={{ width: 75 }} align="center">Status</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
