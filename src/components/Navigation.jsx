@@ -1,9 +1,11 @@
 import * as React from "react";
-import { Link as RouterNavLink } from "react-router-dom";
+import { NavLink as RouterNavLink } from "react-router-dom"; 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+
+const setActive = ({isActive}) => isActive ? 'active-link' : '';
 
 export default function ButtonAppBar() {
   return (
@@ -20,10 +22,10 @@ export default function ButtonAppBar() {
               gap: 3,
             }}
           >
-            <RouterNavLink to="/">
+            <RouterNavLink to="/" className={setActive}>
               <Typography variant="h6">Home</Typography>
             </RouterNavLink>
-            <RouterNavLink to="/table">
+            <RouterNavLink to="/table" className={setActive}>
               <Typography variant="h6">Hero</Typography>
             </RouterNavLink>
           </Box>

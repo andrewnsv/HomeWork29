@@ -8,7 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import BasicModal from "./HeroModalInfo";
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
 
 import HeroTablePagination from "./HeroPagination";
 
@@ -63,20 +63,29 @@ const HeroTable = () => {
   };
 
   return (
-    <React.Fragment>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
       <TableContainer
         sx={{
           background: "transparent",
-          display: "flex",
-          justifyContent: "center",
           mt: 3,
           boxShadow: "none",
           maxHeight: 700,
+          maxWidth: 500,
         }}
         component={Paper}
       >
-        <Table sx={{ overflowY: 'scroll', maxWidth: 500 }} aria-label="customized table">
-          <TableHead sx={{ position: 'sticky', top: 0 }}>
+        <Table
+          sx={{ overflowY: "scroll", maxWidth: 500 }}
+          aria-label="customized table"
+        >
+          <TableHead sx={{ position: "sticky", top: 0 }}>
             <TableRow>
               <StyledTableCell style={{ width: 6 }}>ID</StyledTableCell>
               <StyledTableCell align="left">Name</StyledTableCell>
@@ -133,9 +142,8 @@ const HeroTable = () => {
           />
         </Box>
       )}
-
       <BasicModal data={selectedHero} open={open} setOpen={setOpen} />
-    </React.Fragment>
+    </Box>
   );
 };
 
