@@ -25,6 +25,9 @@ export default function ButtonAppBar() {
             <RouterNavLink to="/" className={setActive}>
               <Typography variant="h6">Home</Typography>
             </RouterNavLink>
+            <RouterNavLink to="/episodes" className={setActive}>
+              <Typography variant="h6">Episodes</Typography>
+            </RouterNavLink>
             <RouterNavLink to="/table" className={setActive}>
               <Typography variant="h6">Hero</Typography>
             </RouterNavLink>

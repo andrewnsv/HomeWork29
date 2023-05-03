@@ -20,9 +20,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => {
       backgroundColor: theme.palette.common.black,
       color: theme.palette.common.white,
     },
-    [`&.${tableCellClasses.body}`]: {
-      fontSize: 14,
-    },
   };
 });
 
@@ -89,7 +86,7 @@ const HeroTable = () => {
             <TableRow>
               <StyledTableCell style={{ width: '24px' }} align="center">ID</StyledTableCell>
               <StyledTableCell align="left">Name</StyledTableCell>
-              <StyledTableCell style={{ width: 75 }} align="center">Status</StyledTableCell>
+              <StyledTableCell style={{ width: '75px' }} align="center">Status</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>

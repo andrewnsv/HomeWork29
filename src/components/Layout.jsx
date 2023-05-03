@@ -7,6 +7,7 @@ const Layout = () => {
     <>
       <Navigation>
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/episodes">Eposodes</NavLink>
         <NavLink to="/table">Table</NavLink>
       </Navigation>
       <Outlet />
